@@ -18,6 +18,7 @@ addBtn.addEventListener('click', function () {
     </li>
     `;
     todoList.insertAdjacentHTML('afterbegin', markUp);
+    input.value = '';
 });
 
 
