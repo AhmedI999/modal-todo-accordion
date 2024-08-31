@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    background: linear-gradient(to bottom right, rgba(224, 49, 49, 0.8), rgba(134, 46, 156));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.add-container {
+    background-color: #f1f3f5;
+    width: 50rem;
+    text-align: center;
+    padding: 3rem 5rem;
+    border-radius: 8px;
+}
+
+.add-input {
+    display: inline-block;
+    width: 80%;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+}
+
+.add-label {
+    display: inline-block;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    background-color: #ff8787;
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+}
+
+
+.todos-container {
+    background-color: #868e96;
+    width: 50rem;
+    padding: 3rem 5rem;
+    border-radius: 8px;
+}
+
+.todos-list {
+    list-style: none;
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.todos-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+
+    background-color: #f1f3f5;
+    border-radius: 0.8rem;
+}
+.trash {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+

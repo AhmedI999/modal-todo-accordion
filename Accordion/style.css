@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #333;
+    background-color: #ffc9c9
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.accordion {
+    background-color: #e9ecef;
+    padding: 5rem 10rem;
+    border-radius: 8px;
+}
+
+.accordion__accordion-item{
+    display: flex;
+    width: 70rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+    font-size: 1.6rem;
+    border: 1px solid #adb5bd;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+}
+
+.accordion-icon {
+    padding: 1rem;
+    transition: transform 0.1s linear;
+}
+
+.accordion-icon-active {
+    transform: rotate(-180deg);
+}
+
+.accordion__accordion-content {
+    width: 70rem;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: #FFFFFFD3;
+    border: 1px solid #adb5bd;
+    transition: all 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+.item-visible {
+    border: 3px solid #748ffc;
+    background-color: #dbe4ff;
+}
+.content-visible {
+    max-height: 500px;
+    padding: 2rem;
+    opacity: 1;
+    transform: translateY(0);
+}
