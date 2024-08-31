@@ -3,10 +3,11 @@
 const input = document.querySelector(".add-input");
 const addBtn = document.querySelector('.add-label');
 const todoList = document.querySelector('.todos-list');
+const container = document.querySelector('.container');
 
 
 //////////////////////
-addBtn.addEventListener('click', function () {
+const addItem = function () {
     if (input.value.trim() === '') {
         alert('Please input an item')
         return;
@@ -19,7 +20,14 @@ addBtn.addEventListener('click', function () {
     `;
     todoList.insertAdjacentHTML('afterbegin', markUp);
     input.value = '';
+};
+addBtn.addEventListener('click', addItem);
+container.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        addItem();
+    }
 });
+
 
 
 ////////////////////
