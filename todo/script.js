@@ -23,8 +23,8 @@ const addItem = function () {
 };
 addBtn.addEventListener('click', addItem);
 container.addEventListener('keydown', function (e) {
-    e.preventDefault();
     if (e.key === 'Enter') {
+        e.preventDefault();
         addItem();
     }
 });
