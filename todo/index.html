@@ -21,25 +21,17 @@
 <body>
   <div class="container">
     <div class="add-container">
-<!--        <div class="error-message">-->
-<!--            <span>Invalid Input. please try again</span>-->
-<!--        </div>-->
-      <form action="#">
-        <input type="text" class="add-input" id="add">
-        <label for="add" class="add-label">Add</label>
-      </form>
+        <form action="#">
+            <input type="text" class="add-input" id="add">
+            <label for="add" class="add-label">Add</label>
+        </form>
     </div>
     <div class="todos-container">
-      <ul class="todos-list">
-        <li class="todos-item">
-            <p>Test</p>
-            <i class="trash fa-solid fa-trash-can"></i>
-        </li>
-        <li class="todos-item">
-          <p>Test</p>
-          <i class="trash fa-solid fa-trash-can"></i>
-        </li>
-      </ul>
+        <button class="btn-clear">
+            <i class="fa-solid fa-broom"></i>
+            <span>Clear List</span>
+        </button>
+        <ul class="todos-list"></ul>
     </div>
   </div>
 </body>
